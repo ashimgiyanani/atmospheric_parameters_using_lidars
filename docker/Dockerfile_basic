@@ -1,0 +1,27 @@
+FROM continuumio/miniconda3:latest
+WORKDIR /app
+
+ENV PYTHONUNBUFFERED=0
+
+# Create the environment:
+COPY environment.yml .
+RUN conda update conda
+RUN conda env create -f environment.yml
+# RUN python -m pip install --no-deps -e .
+
+# Make RUN commands use the new environment:
+SHELL ["conda", "run", "-n", "py39", "/bin/bash", "-c"]
+
+# Make RUN commands use the new environment:
+RUN echo "conda activate py39" >> ~/.bashrc
+SHELL ["/bin/bash", "--login", "-c"]
+
+# The code to run when container is started:
+COPY . /app/
+# CMD ["conda", "run", "--no-capture-output", "-n", "py39", "python", "src/ProcessSRWS_MWE.py"]
+CMD ["conda", "run", "-n", "py39", "python", "-u", "src/ProcessSRWS_MWE.py"]
+
+# start shell in interactive mode and removing the image after done
+
+# docker run -it --rm highremwedatavalidation /bin/bash -c "python src/ProcessSRWS_MWE.py; /bin/bash"
+# docker run -v /mnt://iwes.fraunhofer.de/Data"  --rm highremwedatavalidation

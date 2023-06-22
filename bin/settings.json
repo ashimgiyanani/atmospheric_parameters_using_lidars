@@ -1,0 +1,164 @@
+{
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#135564",
+        "editor.selectionHighlightBackground": "#135564",
+        "editor.findMatchBackground": "#00cc44a8", //Current SEARCH MATCH
+        "editor.findMatchHighlightBackground": "#ff7b00a1", //Other SEARCH MATCHES
+    },
+    
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb",
+        "*.war": "default"
+    },
+    "settingsSync.ignoredSettings": [
+        "-jupyter.alwaysTrustNotebooks"
+    ],
+    "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.inheritEnv": false,
+    "code-runner.executorMap": {    
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "c:\\Users\\giyash\\Miniconda3\\Scripts\\ipython3.exe -i --no-autoindent",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "code-runner.runInTerminal": true,
+    "[json]": {
+        
+
+
+    
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "gitlens.codeLens.scopes": [
+            "document"
+        ]
+    },
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["--line-length", "100"],
+    "python.autoComplete.addBrackets": true,
+    "python.terminal.launchArgs": [
+        "-m",
+    "IPython",
+    "--no-autoindent",
+    ],
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [       
+            {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": { "PYTHONPATH": "'${workspaceRoot}'"},
+            "justMyCode": true,
+            "cwd": "${fileDirname}",
+         }
+        ],
+        "compounds": []
+    },
+
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "python.analysis.completeFunctionParens": true,
+    "editor.renderWhitespace": "none",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "python.terminal.executeInFileDir": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+
+    "jupyter.runStartupCommands": [
+        "%load_ext autoreload", "%autoreload 2"
+    ],
+
+    "files.exclude": {
+        "**/*.js": true
+    },
+    
+    // // Is git enabled
+    "git.enabled": true,
+
+    // // Path to the git executable
+    "git.path": "c:\\Program Files\\Git\\bin\\git.exe",
+    "editor.minimap.enabled": false,
+    "python.defaultInterpreterPath": "C:\\Users\\giyash\\Miniconda3\\envs\\py39\\python.exe",
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "manual",
+    "editor.stickyScroll.enabled": true,
+    "remote.SSH.configFile": "c:\\\\Users\\\\giyash\\\\.ssh\\\\config",
+    "remote.SSH.remoteServerListenOnSocket": true,
+    "remote.SSH.remotePlatform": {
+        "onedas.iwes.fraunhofer.de": "linux"
+    },
+    "window.zoomLevel": -1,
+    "autoDocstring.customTemplatePath": "C:\\Users\\giyash\\OneDrive - Fraunhofer\\Python\\Scripts\\userModules\\docstringTemplate.py",
+    "autoDocstring.includeExtendedSummary": true,
+    "autoDocstring.includeName": true,
+    "autoDocstring.startOnNewLine": true,
+
+    // {
+    // "key": "ctrl+shift+L",
+    // "command": "ipython.sendSelectedToIPython",
+    // "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'",
+    // },
+
+    // {
+    // "key": "ctrl+shift+L",
+    // "command": "-python.execSelectionInTerminal",
+    // "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    // }
+}
+
+

@@ -1,0 +1,44 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+f9",
+        "command": "ipython.sendSelectedToIPython",
+        "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+f9",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "ipython.sendFileContentsToIPython"
+    },
+    {
+        "key": "ctrl+shift+f9",
+        "command": "jupyter.execSelectionInteractive",
+        "when": "editorTextFocus && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-jupyter.execSelectionInteractive",
+        "when": "editorTextFocus && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+f5 ctrl+f5",
+        "command": "jupyter.runFileInteractive"
+    },
+    {
+        "key": "ctrl+shift+f5",
+        "command": "jupyter.notebookeditor.runallcells"
+    },
+    {
+        "key": "ctrl+shift+f6",
+        "command": "jupyter.runcellandallbelow"
+    }
+    {
+        "key": "ctrl+shift+p+i",
+        "command": "pyPasteIndent.pasteIndent",
+        "when": "editorLangId == 'python'"
+      }
+]
