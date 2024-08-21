@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "highre-mwe"
+name = "pypoet_3p10"
 version = "0.1.0"
-description = "minimum working example for HighRe data"
+description = "atmospheric paramaters using lidars"
 authors = ["Ashim Giyanani"]
 license = "free"
 readme = "README.md"
-packages = [{include = "highre_mwe"}]
+packages = [{include = "pypoet_3p10"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 ipykernel = "^6.17.1"
 pandas = "^1.5.1"
 matplotlib = "^3.6.2"
@@ -25,6 +25,7 @@ spyder-kernels = "2.4.*"
 mat73 = "^0.59"
 cdsapi = "^0.5.1"
 xarray = "^2022.11.0"
+halo-reader = "^0.1.2"
 
 
 [build-system]

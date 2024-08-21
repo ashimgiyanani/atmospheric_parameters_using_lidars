@@ -11,3 +11,6 @@
 
 # ignore folders
 **/.venv/*.*
+**/data
+**/doc
+**/vcpkg
